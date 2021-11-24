@@ -8,6 +8,7 @@ import List from '@mui/material/List';
 import ListItemButton from '@mui/material/ListItemButton';
 import Typography from '@mui/material/Typography';
 import Divider from '@mui/material/Divider';
+import Container from '@mui/material/Container';
 import ListItem from '@mui/material/ListItem';
 import ListItemIcon from '@mui/material/ListItemIcon';
 import ListItemText from '@mui/material/ListItemText';
@@ -26,6 +27,13 @@ import Link from '@mui/material/Link';
 import GitHubIcon from '@mui/icons-material/GitHub';
 import LinkedInIcon from '@mui/icons-material/LinkedIn';
 import { makeStyles } from '@mui/styles';
+import Card from '@mui/material/Card';
+import CardActionArea from '@mui/material/CardActionArea';
+import CardActions from '@mui/material/CardActions';
+import CardContent from '@mui/material/CardContent';
+import CardHeader from '@mui/material/CardHeader';
+import CardMedia from '@mui/material/CardMedia';
+import { textAlign } from '@mui/system';
 
 
 
@@ -33,10 +41,16 @@ const useStyles = makeStyles({
 title: {
   color: "#fca311"
 },
-texts:{
-  fontsize: 30,
-  marginBottom: 30
+card:{
+  maxWidth:"800px"
+},
+img:{
+  
+  
+    borderRadius: '50%',
+    margin: '28px'
 }
+
 })
 
 export default function PermanentDrawerLeft() {
@@ -50,7 +64,7 @@ export default function PermanentDrawerLeft() {
       <CssBaseline />
       <AppBar
         position="fixed"
-        sx={{ width: `calc(100% - ${drawerWidth}px)`, ml: `${drawerWidth}px` }}
+        sx={{backgroundColor:'#06d6a0', width: `calc(100% - ${drawerWidth}px)`, ml: `${drawerWidth}px` }}
       >
         <Toolbar>
           <Stack direction="row" spacing={2}>
@@ -67,7 +81,7 @@ export default function PermanentDrawerLeft() {
             width: drawerWidth,
             boxSizing: 'border-box',
             backgroundColor: '#343a40',
-            color: 'whitesmoke',
+            color: 'white',
           },
         }}
         variant="permanent"
@@ -161,14 +175,45 @@ export default function PermanentDrawerLeft() {
           </ListItem>
         </List>
       </Drawer>
-      <Box
       
-        component="main"
-        sx={{ flexGrow: 3, bgcolor: 'background.default', p: 3 }}
+     
+       <Card className={classes.card}>
+      <CardActionArea align="center">
+      
+           <div className={classes.img}>
+             <img alt="Bob Okal" src="https://codewithbob.tech/static/media/profile.62ee495e.jpeg"></img>
+           </div>
+       
+        <CardContent>
+          <Typography gutterBottom variant="h5">
+             Erick B. Okal
+          </Typography>
+              
+         <Typography className={classes.title} variant="h5"> Senior Software Engineer</Typography>
+         <Link href="https://www.linkedin.com/in/erick-bob-10381762/" target="_blank" >
+    <GitHubIcon/>
+</Link>
+        <Link href="https://www.linkedin.com/in/erick-bob-10381762/" target="_blank" >
+    <LinkedInIcon/>
+</Link>
+<Divider/>
+          <Typography variant="h6" color="text.secondary" paragraph gutterBottom>
+             I'm an enthusiastic and forward-looking Software Engineer with 5 years background in creating and executing innovative software solutions to enhance business productivity. Highly experienced in all aspects of the software development lifecycle and end-end project management, from concept through to development and delivery.
+          </Typography>
+          
+        </CardContent>
+      </CardActionArea>
+    </Card>
+     
+      {/* <Box
+      
+       
+        
       >
         <Toolbar />
-         <Avatar alt="Bob Okal" src="https://codewithbob.tech/static/media/profile.62ee495e.jpeg" />
-        <Typography variant="h5">
+        
+        <Typography variant="h5" align="center">
+           <Avatar justify='center' alt="Bob Okal" src="https://codewithbob.tech/static/media/profile.62ee495e.jpeg" />
           Erick B. Okal
           </Typography>
           
@@ -186,7 +231,7 @@ export default function PermanentDrawerLeft() {
         </Typography>
       </Box>
       
-     
+      */}
      
     
     </Box>
