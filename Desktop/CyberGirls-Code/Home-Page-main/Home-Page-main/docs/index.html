@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home Page</title>
+    <link rel="stylesheet" type="text/css" href="./css/home.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"
+        integrity="sha512-iBBXm8fW90+nuLcSKlbmrPcLa0OT92xO1BIsZ+ywDWZCvqsWgccV3gFoRBv0z+8dLJgyAHIhR35VZc2oM/gI1w=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+
+<body>
+
+    <!-- Navbar Area -->
+
+    <nav class="navarea">
+        <img src="./logo.jpg" alt="logo" class="logo">
+        <ul class="hidden" id="mainNav">
+            <li>
+                <a href="/index.html" class="active">Home
+                </a>
+            </li>
+            <li class="dropdown">
+                <a href="#">Courses <i class="fa fa-caret-down"></i></a>
+
+                <ul class="dropdown-content">
+                    <li><a href="/Html-course.html">HTML</a></li>
+                    <li><a href="/css-course.html">Css</a></li>
+                    <li><a href="/js-course.html">Js</a></li>
+                </ul>
+            </li>
+            <li><a href="/about.html">About Us</a></li>
+            </li>
+            <li><a href="/contact-form.html">Contact Form</a></li>
+
+        </ul>
+        <label class="nav-icon" onclick="toggleMenu()">
+            <i class="fas fa-bars"></i>
+        </label>
+    </nav>
+
+    <!-- End Navbar -->
+    <!-- <header>
+        <div style="width: 50%; float:right">
+        <img src="/images/download (1).jpeg">
+        </div>
+
+        <div style="width: 50%; float: left;">
+            <textbox>
+                <h1>An Immersive Online Learning Experience for Every Female</h1> <br>
+                <p>Join our dynamic virtual resource platform specifically designed 
+               just to suit you, with unique courses and self - paced learning.</p>
+            </textbox> 
+        </div>
+        
+    </header> -->
+    <header>
+        <div class="banner">
+            <img src="images/black-woman-at-work.jpg" alt="">
+        </div>
+        <textbox class="banner-text">
+            <h1>An Immersive Online Learning Experience for Every Female</h1> <br>
+            <p>Join our dynamic virtual resource platform specifically designed
+                just to suit you, with unique courses and self - paced learning.</p>
+        </textbox>
+    </header>
+
+    <div class="general">
+        <div class="col">
+            <div class="icon">
+                <i class="fas fa-hand-holding-heart"></i>
+            </div>
+            <textbox>
+                <h3>Sustainable Support System</h3> <br>
+                <p>Connect with a coach for personal assistance and guidance</p>
+            </textbox>
+        </div>
+
+        <div class="col">
+            <div class="icon">
+                <i class="far fa-sun"></i>
+            </div>
+            <h3>Variety of Resources</h3> <br>
+            <p> Select from a variety of resource platforms the learning content suitable for you.</p>
+        </div>
+
+        <div class="col">
+            <div class="icon">
+                <i class="fas fa-star"></i>
+            </div>
+            <h3>Self-Paced and Flexible</h3> <br>
+            <p>Learn at your desired pace through videos, curated content and assessments.</p>
+        </div>
+    </div>
+
+
+    <footer class="footer-distributed">
+        <div class="footer-left">
+            <div style="width: 20%; float: left;"></div>
+            <p>Home</p>
+            <p>Contact</p>
+            <p>Policy</p>
+        </div>
+
+        <div class="footer-left">
+            <div style="width: 35%; float: left;"></div>
+            <div>
+                <p>Resources</p>
+                <p>System Requirementrs</p>
+                <p>Policies and Agreement</p>
+            </div>
+        </div>
+
+        <div class="footer-left">
+            <div style="width: 45%; float: left;"></div>
+            <div>
+                <p>Our Vision is to be the one stop accurate resource platform for every Female to learn tech at no cost
+                </p>
+                <p></p>
+            </div>
+
+        </div>
+        <div class="copyright">
+            <p>@2021 All Rights Reserved</p>
+        </div>
+
+        <div class="name">
+            <p>Crafted with love by Cyber Girls, Tech4Dev Boosters</p>
+        </div>
+    </footer>
+    <script src="./js/navbar.js"></script>
+</body>
+
+</html>
